@@ -155,6 +155,9 @@ p {
    padding-left: 42px;
    outline: transparent;
 
+   transition-property: border-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-frame:placeholder-shown {
@@ -188,6 +191,10 @@ p {
    position: absolute;
    top: 40px;
    left: 12px;
+
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
