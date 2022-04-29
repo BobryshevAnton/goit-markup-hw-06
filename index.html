@@ -153,7 +153,8 @@
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
 
-               <li class="personal-pict"><img src="./img/card1.jpg" alt="Desk top" width="270">
+               <li class="personal-pict">
+                  <img src="./img/card1.jpg" alt="Desk top" width="270">
                   <div class="personal-title">
                      <h3 class="personal-name">Игорь Демьяненко</h3>
                      <p class="personal-position">Product Designer</p>
@@ -195,8 +196,10 @@
                            </a>
                         </li>
                      </ul>
-
-               <li class="personal-pict"><img src="./img/card2.jpg" alt="Desk top" width="270">
+                  </div>
+               </li>
+               <li class="personal-pict">
+                  <img src="./img/card2.jpg" alt="Desk top" width="270">
                   <div class="personal-title">
                      <h3 class="personal-name">Ольга Репина</h3>
                      <p class="personal-position">Frontend Developer</p>
@@ -380,6 +383,7 @@
                </li>
             </ul>
          </div>
+      </section>
    </main>
 
    <!--секція Футер-->
@@ -457,13 +461,15 @@
                         <use href="./img/icon/icons.svg#icon-send"></use>
                      </svg>
                   </button>
-            </div>
-            </form>
 
+               </form>
+            </div>
          </div>
+      </div>
 
    </footer>
-   <!--МОДАЛЬНОЕ ОКНО ---------------------------    -->
+
+
 
 
    <div class="backdrop is-hidden" data-modal>
@@ -496,20 +502,21 @@
 
             <label class="modal-label">
                <span class="modal-name">Комментарий</span>
-               <textarea class="modal-frame text" name="feedback" type="text" rows="5"
-                  placeholder="Введите текст"></textarea>
+
+               <textarea class="modal-frame text" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+
 
             </label>
 
             <label class="modal-checkbox">
 
-               <input class="checkbox hidden-checked" type="checkbox" type="checkbox" name="check" />
+               <input class="checkbox hidden-checked" type="checkbox" name="check" />
                <span class="checkbox-pro">
                   <svg class="checked-iconform" width="16" height="15">
                      <use href="./img/icon/icons.svg#icon-check"></use>
                   </svg>
                </span>
-               <span class="modal-comment">Соглашаюсь с рассылкой и принимаю &nbsp
+               <span class="modal-comment">Соглашаюсь с рассылкой и принимаю &nbsp;
                   <a class="modal-agree" href="">Условия договора</a>
                </span>
             </label>
