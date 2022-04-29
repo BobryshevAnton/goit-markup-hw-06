@@ -114,7 +114,17 @@ p {
    align-items: center;
    cursor: pointer;
 
+
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+   fill: #2196F3;
+}
+
 
 .modal-form {
    display: flex;
@@ -1015,6 +1025,7 @@ section.work {
    margin-left: 93px;
    display: flex;
    flex-direction: column;
+   position: relative;
 
 }
 
@@ -1027,17 +1038,14 @@ section.work {
 
 }
 
-.subscription-label {
-   display: flex;
-   position: relative;
-}
-
 .subscription-email {
    width: 358px;
+   color: rgba(255, 255, 255, 0.6);
 
    border-color: rgba(255, 255, 255, 0.3);
    border-radius: 4px;
-   margin-right: 12px;
+
+   background-color: transparent;
 
    font-size: 16px;
    line-height: 1.25;
@@ -1046,6 +1054,7 @@ section.work {
    padding-top: 15px;
    padding-bottom: 15px;
    outline: transparent;
+
 }
 
 .subscription-email:not(:placeholder-shown) {
@@ -1058,6 +1067,7 @@ section.work {
 .subscription-btn {
 
    background-color: var(--accent-color);
+   margin-left: 12px;
    padding-top: 10px;
    padding-bottom: 10px;
    padding-left: 29px;
@@ -1088,7 +1098,7 @@ section.work {
 .subscription-icon {
    fill: var(--main-color);
    position: absolute;
-   top: 13px;
+   top: 38px;
    right: 28px;
 }
 
