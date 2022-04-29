@@ -170,6 +170,14 @@ p {
    fill: #2196F3;
 }
 
+
+.modal-frame:hover+.modal-iconform,
+.modal-frame:hover+.modal-iconform {
+   fill: #2196F3;
+
+}
+
+
 .modal-frame:hover,
 .modal-frame:focus {
    border-color: #2196F3;
